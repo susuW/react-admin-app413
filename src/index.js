@@ -19,6 +19,13 @@ import Echarts from './components/charts/Echarts';
 import Recharts from './components/charts/Recharts';
 
 import Banners from './components/ui/banners';
+import NotFound from './components/pages/NotFound';
+import Modals from './components/ui/Modals';
+import Notifications from './components/ui/Notifications';
+import Tabs from './components/ui/Tabs';
+import Wysiwyg from './components/ui/Wysiwyg';
+import Drags from './components/ui/Draggable';
+import Gallery from './components/ui/Gallery';
 
 ReactDOM.render(
   <Router history={hashHistory}>
@@ -39,6 +46,12 @@ ReactDOM.render(
                   <Route path={'buttons'} component={Buttons} />
                   <Route path={'spins'} component={Spins} />
                   <Route path={'banners'} component={Banners} />
+                  <Route path={'modals'} component={Modals} />
+                  <Route path={'notifications'} component={Notifications} />
+                  <Route path={'tabs'} component={Tabs} />
+                  <Route path={'wysiwyg'} component={Wysiwyg} />
+                  <Route path={'drags'} component={Drags} />
+                  <Route path={'gallery'} component={Gallery} />
 
               </Route>
               <Route path={'chart'}>
@@ -47,6 +60,7 @@ ReactDOM.render(
               </Route>
           </Route>
           <Route path={'login'} components={Login} />
+          <Route path={'404'} component={NotFound} />
       </Route>
   </Router>,
   document.getElementById('root')

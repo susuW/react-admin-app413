@@ -67,6 +67,8 @@ class SiderCustom extends Component {
                         title={<span><Icon type="switcher" /><span className="nav-text">页面</span></span>}
                     >
                         <Menu.Item key="/login"><Link to={'/login'}>登录</Link>登录</Menu.Item>
+                        <Menu.Item key="/404"><Link to={'/404'}>404</Link></Menu.Item>
+
                     </SubMenu>
                     <SubMenu
                         key="/app/ui"
@@ -77,6 +79,13 @@ class SiderCustom extends Component {
                         <Menu.Item key="/app/ui/icons"><Link to={'/app/ui/icons'}>图标</Link></Menu.Item>
                         <Menu.Item key="/app/ui/spins"><Link to={'/app/ui/spins'}>加载中</Link></Menu.Item>
                         <Menu.Item key="/app/ui/banners"><Link to={'/app/ui/banners'}>轮播图</Link></Menu.Item>
+                        <Menu.Item key="/app/ui/modals"><Link to={'/app/ui/modals'}>对话框</Link></Menu.Item>
+                        <Menu.Item key="/app/ui/notifications"><Link to={'/app/ui/notifications'}>通知提醒框</Link></Menu.Item>
+                        <Menu.Item key="/app/ui/tabs"><Link to={'/app/ui/tabs'}>标签页</Link></Menu.Item>
+                        <Menu.Item key="/app/ui/wysiwyg"><Link to={'/app/ui/wysiwyg'}>富文本</Link></Menu.Item>
+                        <Menu.Item key="/app/ui/drags"><Link to={'/app/ui/drags'}>拖拽</Link></Menu.Item>
+                        <Menu.Item key="/app/ui/gallery"><Link to={'/app/ui/gallery'}>画廊</Link></Menu.Item>
+
                     </SubMenu>
                     <SubMenu
                         key="/app/table"
